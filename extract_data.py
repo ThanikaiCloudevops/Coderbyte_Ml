@@ -1,0 +1,5 @@
+heading, full_article = extract_article('https://example.com/article-url')
+cleaned_text = clean_text(full_article)
+encoded_text = encode(cleaned_text)
+predicted_type = clf_loaded.predict(encoded_text)
+print(f'Predicted article type: {predicted_type}')
